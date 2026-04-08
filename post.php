@@ -1,5 +1,4 @@
 <?php
-// Взаимодействие с front
 
 include_once "pdo.php";
 

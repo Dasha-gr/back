@@ -1,12 +1,12 @@
 <?php
-// --- GET. ВЫВОД КАТАЛОГА ---
-if($_GET !== null){
-    // Получение данных из таблицы catalog по полю id
-    $stmt = $pdo->prepare("SELECT * FROM catalog");
-    $stmt->execute();
-    $results = $stmt->fetchAll();
-    print_r($results);
-}else{
-     return false;
-}
+// Подключение к базе данных
+include_once 'pdo.php';
+$db = new DB();
+$pdo = $db->connect();
 
+// --- GET. ВНЕСЕНИЕ ДАННЫХ ИЗ БД В БЛОК ---
+$stmt = $pdo->query("SELECT * FROM catalog");
+$results = $stmt->fetchAll();
+
+
+echo json_encode($results); // Вывод результата в формате JSON
