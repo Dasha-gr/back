@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: Arial;
-            background-color: #f4f4f4;
+            background-color: #e5e4e2;
             color: #2d9e5c;
             text-align: center;
             padding: 50px;
@@ -14,7 +14,7 @@
         }
         h1 {
             font-size: 72px;
-            color: #6de73c;
+            color: #62926c;
             margin: 20px 0;
         }
         p {
